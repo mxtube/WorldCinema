@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="SignUp" customModule="Cinema" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x5o-ud-on3">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="q4O-nz-OOI">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="zV5-JQ-dUE">
+                                                <rect key="frame" x="87.5" y="82" width="239" height="159"/>
+                                                <subviews>
+                                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Logotype" translatesAutoresizingMaskIntoConstraints="NO" id="1GK-cN-BFh">
+                                                        <rect key="frame" x="12.5" y="0.0" width="214" height="113.5"/>
+                                                    </imageView>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WorldCinema" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="v7K-G9-r50">
+                                                        <rect key="frame" x="0.0" y="113.5" width="239" height="45.5"/>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="38"/>
+                                                        <color key="textColor" name="LabelTextColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="QUu-Rc-pL0">
+                                                <rect key="frame" x="16" y="305" width="382" height="284"/>
+                                                <subviews>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Имя" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2rQ-3t-Xqe" customClass="RoundedTextField" customModule="Cinema" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="sxB-CJ-ipw"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="TextFieldTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="name"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="TextFieldBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderLine">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="TextFieldPlaceholderTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderTextEdgeLeft">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Фамилия" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="R3e-AX-8BR" customClass="RoundedTextField" customModule="Cinema" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="60" width="382" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="zhG-7c-FyA"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="TextFieldTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="family-name"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="TextFieldBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderLine">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="TextFieldPlaceholderTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderTextEdgeLeft">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="E-mail" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XF8-Ga-HjT" customClass="RoundedTextField" customModule="Cinema" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="120" width="382" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="c42-1L-m3b"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="TextFieldTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" textContentType="email"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="TextFieldBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderLine">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="TextFieldPlaceholderTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderTextEdgeLeft">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UST-0v-wlb" customClass="RoundedTextField" customModule="Cinema" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="180" width="382" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="N7U-WN-pvR"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="TextFieldTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="TextFieldBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderLine">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="TextFieldPlaceholderTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderTextEdgeLeft">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Повторите пароль" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZY1-Et-9wR" customClass="RoundedTextField" customModule="Cinema" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="240" width="382" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="6ed-Eq-dUE"/>
+                                                        </constraints>
+                                                        <color key="textColor" name="TextFieldTextColor"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                        <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="TextFieldBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderLine">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                                                                <color key="value" name="TextFieldPlaceholderTextColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="placeholderTextEdgeLeft">
+                                                                <real key="value" value="16"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                    </textField>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="zYA-xN-ocZ">
+                                                <rect key="frame" x="16" y="649" width="382" height="104"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dYh-fk-awV" customClass="RoundedButton" customModule="Cinema" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="382" height="44"/>
+                                                        <color key="backgroundColor" name="ButtonRedBackgroundColor"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="JX8-Vo-hDx"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="Зарегистрироваться">
+                                                            <color key="titleColor" name="ButtonRedTextColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="signUpAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Ihc-eK-C7X"/>
+                                                        </connections>
+                                                    </button>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ass-6O-wpd" customClass="RoundedButton" customModule="Cinema" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="60" width="382" height="44"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="44" id="scm-hy-5Fn"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                        <state key="normal" title="У меня уже есть аккаунт">
+                                                            <color key="titleColor" name="ButtonClearTextColor"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderRadius">
+                                                                <real key="value" value="4"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="borderLine">
+                                                                <real key="value" value="1"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                                <color key="value" name="ButtonClearBorderColor"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <segue destination="Jbx-QY-d1q" kind="show" id="fGv-bQ-vag"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="QUu-Rc-pL0" firstAttribute="leading" secondItem="q4O-nz-OOI" secondAttribute="leading" constant="16" id="Oqw-Kn-euZ"/>
+                                            <constraint firstItem="zYA-xN-ocZ" firstAttribute="top" secondItem="QUu-Rc-pL0" secondAttribute="bottom" constant="60" id="SYS-b5-ggc"/>
+                                            <constraint firstItem="QUu-Rc-pL0" firstAttribute="top" secondItem="zV5-JQ-dUE" secondAttribute="bottom" constant="64" id="WOb-fZ-Pct"/>
+                                            <constraint firstItem="zYA-xN-ocZ" firstAttribute="leading" secondItem="q4O-nz-OOI" secondAttribute="leading" constant="16" id="YKP-X5-xtw"/>
+                                            <constraint firstAttribute="trailing" secondItem="QUu-Rc-pL0" secondAttribute="trailing" constant="16" id="aon-zl-ger"/>
+                                            <constraint firstItem="zV5-JQ-dUE" firstAttribute="centerX" secondItem="q4O-nz-OOI" secondAttribute="centerX" id="e8J-pf-Xjt"/>
+                                            <constraint firstItem="zV5-JQ-dUE" firstAttribute="top" secondItem="q4O-nz-OOI" secondAttribute="topMargin" constant="30" id="eC6-Xd-Uew"/>
+                                            <constraint firstAttribute="trailing" secondItem="zYA-xN-ocZ" secondAttribute="trailing" constant="16" id="kK3-u2-aje"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="q4O-nz-OOI" firstAttribute="width" secondItem="x5o-ud-on3" secondAttribute="width" id="14t-Si-NR1"/>
+                                    <constraint firstItem="q4O-nz-OOI" firstAttribute="top" secondItem="x5o-ud-on3" secondAttribute="top" id="NBH-Zp-jNG"/>
+                                    <constraint firstAttribute="trailing" secondItem="q4O-nz-OOI" secondAttribute="trailing" id="ZB2-7D-iEf"/>
+                                    <constraint firstItem="q4O-nz-OOI" firstAttribute="leading" secondItem="x5o-ud-on3" secondAttribute="leading" id="gLW-bb-nly"/>
+                                    <constraint firstItem="q4O-nz-OOI" firstAttribute="height" secondItem="x5o-ud-on3" secondAttribute="height" priority="750" id="vjk-rD-xAx"/>
+                                    <constraint firstAttribute="bottom" secondItem="q4O-nz-OOI" secondAttribute="bottom" id="wvK-yY-wqd"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" name="ViewBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="x5o-ud-on3" secondAttribute="bottom" id="XzW-uu-6Au"/>
+                            <constraint firstItem="x5o-ud-on3" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="ZTa-yw-qJC"/>
+                            <constraint firstItem="x5o-ud-on3" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="bOd-eY-nb2"/>
+                            <constraint firstItem="x5o-ud-on3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="eip-Lc-yO9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="email" destination="XF8-Ga-HjT" id="7eS-mn-p87"/>
+                        <outlet property="firstName" destination="2rQ-3t-Xqe" id="X3S-PY-z9v"/>
+                        <outlet property="lastName" destination="R3e-AX-8BR" id="PPo-AN-66R"/>
+                        <outlet property="password" destination="UST-0v-wlb" id="wVI-hy-h3W"/>
+                        <outlet property="rePassword" destination="ZY1-Et-9wR" id="sOh-Zm-iYD"/>
+                        <segue destination="Jbx-QY-d1q" kind="show" identifier="signInSegue" id="D0c-Du-Gbg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="67.633928571428569"/>
+        </scene>
+        <!--SignIn-->
+        <scene sceneID="Qyk-Qw-RW9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="SignIn" id="Jbx-QY-d1q" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="RaI-1m-nOM"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UQ2-Q1-gS8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="550" y="68"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="2rQ-3t-Xqe">
+            <size key="intrinsicContentSize" width="44.5" height="18.5"/>
+        </designable>
+        <designable name="R3e-AX-8BR">
+            <size key="intrinsicContentSize" width="77.5" height="18.5"/>
+        </designable>
+        <designable name="UST-0v-wlb">
+            <size key="intrinsicContentSize" width="66" height="17"/>
+        </designable>
+        <designable name="XF8-Ga-HjT">
+            <size key="intrinsicContentSize" width="57" height="18.5"/>
+        </designable>
+        <designable name="ZY1-Et-9wR">
+            <size key="intrinsicContentSize" width="139.5" height="17"/>
+        </designable>
+        <designable name="ass-6O-wpd">
+            <size key="intrinsicContentSize" width="178" height="29"/>
+        </designable>
+        <designable name="dYh-fk-awV">
+            <size key="intrinsicContentSize" width="150" height="29"/>
+        </designable>
+    </designables>
+    <inferredMetricsTieBreakers>
+        <segue reference="D0c-Du-Gbg"/>
+    </inferredMetricsTieBreakers>
+    <resources>
+        <image name="Logotype" width="214" height="113.5"/>
+        <namedColor name="ButtonClearBorderColor">
+            <color red="0.6589999794960022" green="0.6589999794960022" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonClearTextColor">
+            <color red="0.93699997663497925" green="0.22699999809265137" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonRedBackgroundColor">
+            <color red="0.93699997663497925" green="0.22699999809265137" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ButtonRedTextColor">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LabelTextColor">
+            <color red="0.93699997663497925" green="0.22699999809265137" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldBorderColor">
+            <color red="0.6589999794960022" green="0.6589999794960022" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldPlaceholderTextColor">
+            <color red="0.6589999794960022" green="0.6589999794960022" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="TextFieldTextColor">
+            <color red="0.6589999794960022" green="0.6589999794960022" blue="0.6589999794960022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="ViewBackgroundColor">
+            <color red="0.20000000298023224" green="0.16099999845027924" blue="0.45100000500679016" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
