@@ -17,6 +17,6 @@
 
 # Preview
 <div align="center">
-<img src="Preview.gif" height="400" />
+<img src="Preview.PNG" height="400" />
 <div>
 </center>

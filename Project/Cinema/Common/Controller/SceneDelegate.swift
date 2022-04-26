@@ -20,13 +20,14 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         
         let firstRun = userDefault.bool(forKey: "wasLaunched")
         let isLogin = userDefault.integer(forKey: "token")
+        print(isLogin)
         if firstRun != true {
             let signUp = UIStoryboard(name: "SignUp", bundle: nil)
             var vc: UIViewController
             vc = signUp.instantiateInitialViewController()!
             self.window?.rootViewController = vc
         } else if isLogin > 0 {
-            let main = UIStoryboard(name: "Main", bundle: nil)
+            let main = UIStoryboard(name: "Tabbar", bundle: nil)
             var vc: UIViewController
             vc = main.instantiateInitialViewController()!
             self.window?.rootViewController = vc
