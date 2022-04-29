@@ -12,12 +12,17 @@
         <scene sceneID="hVn-I6-Y2c">
             <objects>
                 <tabBarController modalPresentationStyle="fullScreen" id="bvC-EG-mRR" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="0yj-TF-kml">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="0yj-TF-kml">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" name="TabbarBackground"/>
                         <color key="tintColor" name="TabbarTextColor"/>
+                        <color key="barTintColor" name="ButtonClearTextColor"/>
                         <color key="selectedImageTintColor" name="TabbarIconColor"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="TabbarBackground"/>
+                            <color key="selectionIndicatorTintColor" name="TabbarIconColor"/>
+                        </tabBarAppearance>
                     </tabBar>
                     <connections>
                         <segue destination="8sd-3Q-U1m" kind="relationship" relationship="viewControllers" id="T0K-GN-nxb"/>
@@ -72,14 +77,17 @@
         </scene>
     </scenes>
     <resources>
+        <namedColor name="ButtonClearTextColor">
+            <color red="0.93699997663497925" green="0.22699999809265137" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="TabbarBackground">
-            <color red="0.10980392156862745" green="0.10196078431372549" blue="0.098039215686274508" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10999999940395355" green="0.10199999809265137" blue="0.097999997437000275" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TabbarIconColor">
-            <color red="0.93725490196078431" green="0.22745098039215686" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93699997663497925" green="0.22699999809265137" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="TabbarTextColor">
-            <color red="0.93725490196078431" green="0.22745098039215686" blue="0.0039215686274509803" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.93699997663497925" green="0.22699999809265137" blue="0.0040000001899898052" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

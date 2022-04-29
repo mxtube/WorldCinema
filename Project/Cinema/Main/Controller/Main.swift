@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Kingfisher
 
 class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource {
     
@@ -18,14 +19,19 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
     @IBOutlet weak var lastMoviePoster: UIImageView!
     @IBOutlet weak var lastMoviePlay: UIButton!
     @IBOutlet weak var lastMovieName: UILabel!
+    @IBOutlet weak var lastMovieTitle: UILabel!
     
     var movieId: String?
     var movieArray: [Movie] = []
     
+    override func loadView() {
+        super.loadView()
+        requestLastMovie()
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         coverName.text = ""
         requestCoverImage()
-        requestLastMovie()
         gradientImageCoverMovie()
     }
     
@@ -157,6 +163,7 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
     
     private func parseLastMovie(_ inJSON: Data) {
         let json = JSON(inJSON)
+        guard json.count >= 1 else { return hideLastMovie() }
         let movie = Movie(
             id: json[json.count-1]["movieId"].stringValue,
             name: json[json.count-1]["name"].stringValue,
@@ -169,14 +176,20 @@ class Main: UIViewController, UICollectionViewDelegate, UICollectionViewDataSour
         lastMoviePoster.image = UIImage(data: imgData)
     }
     
+    private func hideLastMovie() {
+        lastMovieTitle.removeFromSuperview()
+        lastMoviePoster.removeFromSuperview()
+        lastMovieName.removeFromSuperview()
+        lastMoviePlay.removeFromSuperview()
+    }
+    
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cellMovie = collectionView.dequeueReusableCell(withReuseIdentifier: "movieCell", for: indexPath) as! MovieCell
         cellMovie.layer.shouldRasterize = true
         cellMovie.layer.rasterizationScale = UIScreen.main.scale
         let urlString = movieArray[indexPath.row].url
         let url = URL(string: urlString)
-        let data = try! Data(contentsOf: url!)
-        cellMovie.poster.image = UIImage(data: data)
+        cellMovie.poster.kf.setImage(with: url)
         return cellMovie
     }
     

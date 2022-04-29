@@ -18,6 +18,11 @@ class SignIn: UIViewController {
     let userDefault = UserDefaults.standard
     var auth: Auth!
     
+    override func viewWillAppear(_ animated: Bool) {
+        email.text = "vasya@mail.com"
+        password.text = "qwerty"
+    }
+    
     @IBAction func signInAction(_ sender: UIButton) {
         guard isEmailValid() && isPasswordValid() else { return }
         guard isEmailCorrect() else { return }
